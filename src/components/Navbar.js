@@ -19,48 +19,50 @@ export default function Navbar() {
   return (
     <nav className="sticky top-0 z-50 w-full border-b border-white/5 bg-background-dark/80 backdrop-blur-xl">
       <div className="px-4 md:px-10 py-3 max-w-[1280px] mx-auto flex items-center justify-between">
-        <a href="/" className="hidden md:block text-white text-xl font-bold tracking-tight">
+        <a href="/" className="text-white text-xl font-bold tracking-tight whitespace-nowrap">
           Rekordly
         </a>
-        <div className="hidden md:flex flex-1 justify-end gap-8">
-          <a
-            className={
-              active.features
-                ? "text-white transition-colors text-sm font-medium"
-                : "text-zinc-400 hover:text-white transition-colors text-sm font-medium"
-            }
-            href="/features"
+        <div className="flex items-center">
+          <div className="hidden md:flex justify-end gap-8">
+            <a
+              className={
+                active.features
+                  ? "text-white transition-colors text-sm font-medium"
+                  : "text-zinc-400 hover:text-white transition-colors text-sm font-medium"
+              }
+              href="/features"
+            >
+              Features
+            </a>
+            <a
+              className={
+                active.howItWorks
+                  ? "text-white transition-colors text-sm font-medium"
+                  : "text-zinc-400 hover:text-white transition-colors text-sm font-medium"
+              }
+              href="/how-it-works"
+            >
+              How it works
+            </a>
+            <a
+              className={
+                active.about
+                  ? "text-white transition-colors text-sm font-medium"
+                  : "text-zinc-400 hover:text-white transition-colors text-sm font-medium"
+              }
+              href="/about"
+            >
+              About
+            </a>
+          </div>
+          <button
+            className="md:hidden text-white"
+            onClick={() => setMobileOpen((v) => !v)}
+            type="button"
           >
-            Features
-          </a>
-          <a
-            className={
-              active.howItWorks
-                ? "text-white transition-colors text-sm font-medium"
-                : "text-zinc-400 hover:text-white transition-colors text-sm font-medium"
-            }
-            href="/how-it-works"
-          >
-            How it works
-          </a>
-          <a
-            className={
-              active.about
-                ? "text-white transition-colors text-sm font-medium"
-                : "text-zinc-400 hover:text-white transition-colors text-sm font-medium"
-            }
-            href="/about"
-          >
-            About
-          </a>
+            <span className="material-symbols-outlined">menu</span>
+          </button>
         </div>
-        <button
-          className="md:hidden text-white"
-          onClick={() => setMobileOpen((v) => !v)}
-          type="button"
-        >
-          <span className="material-symbols-outlined">menu</span>
-        </button>
       </div>
       <div
         id="mobile-menu"
