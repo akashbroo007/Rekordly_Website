@@ -19,13 +19,10 @@ export default function Navbar() {
   return (
     <nav className="sticky top-0 z-50 w-full border-b border-white/5 bg-background-dark/80 backdrop-blur-xl">
       <div className="px-4 md:px-10 py-3 max-w-[1280px] mx-auto flex items-center justify-between">
-        <a href="/" className="flex items-center gap-3 text-white group cursor-pointer">
-          <div className="size-8 flex items-center justify-center group-hover:scale-110 transition-transform">
-            <img alt="Rekordly" className="size-8" src="/rekordly-logo.svg" />
-          </div>
-          <h2 className="text-white text-xl font-bold tracking-tight">Rekordly</h2>
+        <a href="/" className="hidden md:block text-white text-xl font-bold tracking-tight">
+          Rekordly
         </a>
-        <div className="hidden md:flex flex-1 justify-center gap-8">
+        <div className="hidden md:flex flex-1 justify-end gap-8">
           <a
             className={
               active.features
@@ -55,15 +52,6 @@ export default function Navbar() {
             href="/about"
           >
             About
-          </a>
-        </div>
-        <div className="flex items-center gap-4">
-          <a
-            href="/download"
-            className="flex items-center justify-center gap-2 overflow-hidden rounded-lg h-10 px-5 bg-primary hover:bg-primary-hover text-black text-sm font-bold shadow-glow transition-all hover:scale-105 active:scale-95"
-          >
-            <span className="material-symbols-outlined text-[20px]">download</span>
-            <span className="truncate">Download</span>
           </a>
         </div>
         <button
@@ -107,9 +95,6 @@ export default function Navbar() {
           href="/about"
         >
           About
-        </a>
-        <a href="/download" className="text-primary font-bold text-sm">
-          Download
         </a>
       </div>
     </nav>
