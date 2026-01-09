@@ -93,7 +93,7 @@ export default function ContactPage() {
                 <div className="flex flex-col justify-center">
                   <h4 className="text-white font-bold text-base">Documentation</h4>
                   <p className="text-text-dim text-sm mb-2">Detailed guides on how to use Rekordly features.</p>
-                  <a className="text-primary text-sm font-bold hover:underline" href="#">
+                  <a className="text-primary text-sm font-bold hover:underline" href="/docs">
                     Read Docs
                   </a>
                 </div>
@@ -113,7 +113,7 @@ export default function ContactPage() {
                 <div className="flex flex-col justify-center">
                   <h4 className="text-white font-bold text-base">Troubleshooting</h4>
                   <p className="text-text-dim text-sm mb-2">Solutions for common recording issues.</p>
-                  <a className="text-primary text-sm font-bold hover:underline" href="#">
+                  <a className="text-primary text-sm font-bold hover:underline" href="/faq">
                     View FAQ
                   </a>
                 </div>

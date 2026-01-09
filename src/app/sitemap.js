@@ -8,6 +8,8 @@ export default function sitemap() {
     "/how-it-works",
     "/about",
     "/contact",
+    "/docs",
+    "/faq",
     "/privacy",
     "/terms",
     "/responsible-use",

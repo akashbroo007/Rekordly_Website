@@ -38,7 +38,7 @@ export default function TermsPage() {
             <h1 className="text-4xl md:text-5xl font-black leading-tight tracking-[-0.033em] text-white">
               Terms &amp; Conditions
             </h1>
-            <p className="text-text-dim text-base font-normal leading-normal">Last updated: October 24, 2023</p>
+            <p className="text-text-dim text-base font-normal leading-normal">Last updated: January, 2026</p>
           </div>
 
           <section id="introduction" className="prose dark:prose-invert max-w-none text-gray-300 leading-relaxed">
