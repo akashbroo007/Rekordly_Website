@@ -1,5 +1,5 @@
 export default function sitemap() {
-  const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || "http://localhost:3000";
+  const baseUrl = getBaseUrl();
 
   const routes = [
     "",
@@ -19,4 +19,19 @@ export default function sitemap() {
     url: `${baseUrl}${path}`,
     lastModified: new Date(),
   }));
+}
+
+function getBaseUrl() {
+  const explicit = process.env.NEXT_PUBLIC_SITE_URL || process.env.SITE_URL;
+  if (explicit) return normalizeUrl(explicit);
+
+  if (process.env.NODE_ENV === "production") {
+    return "https://www.rekordly.in";
+  }
+
+  return "http://localhost:3000";
+}
+
+function normalizeUrl(url) {
+  return String(url).replace(/\/$/, "");
 }
