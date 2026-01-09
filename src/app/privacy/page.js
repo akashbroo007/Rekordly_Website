@@ -22,7 +22,7 @@ export default function PrivacyPage() {
               <span className="inline-flex items-center rounded-full bg-primary/10 border border-primary/20 px-3 py-1 text-xs font-bold text-primary">
                 Legal
               </span>
-              <span className="text-sm text-text-dim">Last updated: October 24, 2023</span>
+              <span className="text-sm text-text-dim">Last updated: January, 2026</span>
             </div>
             <h1 className="text-4xl font-black tracking-tight text-white sm:text-6xl mb-6">Privacy Policy</h1>
             <p className="text-lg leading-8 text-text-dim">

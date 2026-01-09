@@ -1,6 +1,8 @@
 import { Manrope } from "next/font/google";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
+import CookieConsentBanner from "../components/CookieConsentBanner";
+import GoogleAnalytics from "../components/GoogleAnalytics";
 
 import "./globals.css";
 
@@ -22,9 +24,11 @@ export default function RootLayout({ children }) {
         <link rel="icon" href="/rekordly-logo.svg" type="image/svg+xml" />
       </head>
       <body className="bg-background-light dark:bg-background-dark text-slate-900 dark:text-white font-display antialiased overflow-x-hidden selection:bg-primary selection:text-black min-h-screen flex flex-col">
+        <GoogleAnalytics />
         <Navbar />
         {children}
         <Footer />
+        <CookieConsentBanner />
       </body>
     </html>
   );
